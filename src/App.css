@@ -1,22 +1,51 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
 .navbar {
-  background-color: ;
+  padding: 20px;
+  background-color:;
   display: flex;
   justify-content: center;
 }
 
-h1{
-  font-family: 'Roboto', sans-serif;
+
+select {
+  /* Resetar Select */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalizar */
+  font-size: 18px;
+  font-family: 'Source Code Pro', monospace;
+  flex: 1;
+  padding: 0 1em;
+  color: white;
+  background-color: #006076;
+  cursor: pointer;
 }
 
+select::-ms-expand {
+  display: none;
+}
+
+.selectLangue {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 3em;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.selectLangue::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #006076;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+
+.selectLangue:hover::after {
+  color: black;
+}

@@ -1,6 +1,6 @@
 export default function Footer(){
     return(
-        <footer className="text-center footer navbar-fixed-bottom" >
+        <footer className="text-center footer navbar-fixed-bottom tagLine" >
             <div className="text-center p-3">
                 <b>API translator ©</b> - Developed 🤍 by Guilherme Nunes.
             </div>
