@@ -7,8 +7,9 @@ import SelectLangue from './components/SelectLangue'
   return (
     <div className="App">
       <NavBar/>
-      <Footer/>
       <SelectLangue/>
+      <Footer/>
+      
     </div>
   )
 }
