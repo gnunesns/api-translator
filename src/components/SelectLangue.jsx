@@ -1,8 +1,9 @@
-export default function SelectLangue(){
+export default SelectLangue = ({id, select}) =>{  
     return(
         <div className="selectLangue">
-            <select>
+            <select key={id} onChange={select}>
                 <option value="">Selecione Idioma</option>
+                <option value="pt">Português</option>
                 <option value="en">Inglês</option>
                 <option value="es">Espanhol</option>
                 <option value="de">Alemão</option>
@@ -10,4 +11,4 @@ export default function SelectLangue(){
             </select>
         </div>
     );
-}
+};
